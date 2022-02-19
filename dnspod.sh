@@ -27,7 +27,7 @@ fi
 echo "[DNS IP]:$DNSIP"
 if [ "$DNSIP" == "$DEVIP" ];then
 echo "IP SAME IN DNS,SKIP UPDATE."
-#exit
+exit
 fi
 
 token="login_token=${API_ID},${API_Token}&lang=en&format=json&domain=${domain}"
